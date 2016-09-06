@@ -22,7 +22,7 @@ nav li {
 	padding: 0px 8px;
 }
 
-img {
+nav img {	/*true confession: I corrected this after submitting assignment b/c I noticed it was applying to the cat & dog imgs */
   position: absolute;
   left: 60px;
   width: 50px;
@@ -34,7 +34,7 @@ main {
 	position: absolute;
 	top: 80px;
 	width: 100%;
-	height: 100%;
+	height: calc(100% - 80px); /* I also added this after submitting, to make height stretch full page (important b/c bg img is applied here) */
 	background: url('../images/outerspace_landscape.jpeg') no-repeat center;
 	background-size: cover;
 }
@@ -46,7 +46,8 @@ main {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 17%;
+	/*margin-top: 17%;*/	/* removed after submitting */
+	top: calc(50% - 150px); /* added after submitting -- I wanted green box element to be always positioned in middle of main */
 }
 
 .cat, .dog {
